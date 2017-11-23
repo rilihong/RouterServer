@@ -1,0 +1,3 @@
+/home/rilihong/github/RouterServer/CMakeFiles/rebuild_cache.dir
+/home/rilihong/github/RouterServer/CMakeFiles/edit_cache.dir
+/home/rilihong/github/RouterServer/CMakeFiles/Sample.dir
