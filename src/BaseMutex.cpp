@@ -4,12 +4,14 @@
 
 #include "BaseMutex.h"
 
-BaseMutex::BaseMutex(std::mutex * t_mutex)
+namespace noble
 {
-    l_mutex = t_mutex;
-    l_mutex->lock();
-}
-BaseMutex::~BaseMutex()
-{
-    l_mutex->unlock();
+    BaseMutex::BaseMutex(std::mutex *t_mutex) {
+        l_mutex = t_mutex;
+        l_mutex->lock();
+    }
+
+    BaseMutex::~BaseMutex() {
+        l_mutex->unlock();
+    }
 }

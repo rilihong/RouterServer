@@ -3,3 +3,16 @@
 //
 
 #include "TimerTask.h"
+
+namespace noble
+{
+    int TimerTask::time_escape()
+    {
+        return pass_time(active_time);
+    }
+
+    int TimerTask::is_timeout()
+    {
+        return time_escape() - delay_time >= 0 ? true:false;
+    }
+}

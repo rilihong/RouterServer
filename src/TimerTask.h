@@ -4,30 +4,23 @@
 
 #ifndef ROUTERSERVER_TIMER_TASK_H
 #define ROUTERSERVER_TIMER_TASK_H
-#include <functional>
+
 #include "BaseMessage.h"
 #include "BaseFunction.h"
 
-//typedef std::function<void(BaseMsg* base_msg)> MsgTask;
-typedef std::function<void()> MsgTask;
-
-struct TimerTask
+namespace noble
 {
-    MsgTask cb;
-    int count;
-    int delay_time;
-    int active_time;
-
-    int time_escape()
+    class TimerTask
     {
-        return pass_time(active_time);
-    }
-
-    int is_timeout()
-    {
-        return time_escape() - delay_time >= 0 ? true:false;
-    }
-};
+    public:
+        MsgTask cb;
+        int count;
+        int delay_time;
+        int active_time;
+        int time_escape();
+        int is_timeout();
+    };
+}
 
 
 #endif //ROUTERSERVER_TIMER_TASK_H

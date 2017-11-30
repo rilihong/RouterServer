@@ -6,14 +6,17 @@
 #define ROUTERSERVER_BASEMUTEX_H
 #include <mutex>
 
-class BaseMutex
+namespace noble
 {
-private:
-    std::mutex *l_mutex;
-public:
-    BaseMutex(std::mutex * t_mutex);
-    ~BaseMutex();
-};
+    class BaseMutex
+    {
+    private:
+        std::mutex *l_mutex;
+    public:
+        BaseMutex(std::mutex * t_mutex);
+        ~BaseMutex();
+    };
+}
 
 
 #endif //ROUTERSERVER_BASEMUTEX_H

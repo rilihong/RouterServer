@@ -9,23 +9,28 @@
 #include "BaseMessage.h"
 #include "TimerTask.h"
 #include "BaseMutex.h"
+#include "TimeTaskQueue.h"
 #include <thread>
 
-class BaseRouter
+namespace noble
 {
-    std::vector<MsgTask> task_queues;
-    std::mutex task_mutex;
-    std::vector<TimerTask> timer_tasks;
-    std::mutex timer_mutex;
-public:
-    void add_task_queue(MsgTask cb);
+    class TimerTaskQueue;
+    class BaseRouter
+    {
+        std::vector<MsgTask> task_queues;
+        std::mutex task_mutex;
+        TimerTaskQueue* timer_task_queue;
+    public:
+        void add_task_queue(MsgTask cb);
 
-    void add_time_queue(TimerTask cb);
+        BaseRouter();
 
-    BaseRouter();
+        void Init();
 
-    void MainProc();
-};
+        void MainProc();
+    };
+}
+
 
 
 

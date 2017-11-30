@@ -5,9 +5,11 @@
 #ifndef ROUTERSERVER_BASEFUNCTION_H
 #define ROUTERSERVER_BASEFUNCTION_H
 
-int pass_time(int imput_time = 0);
+namespace noble
+{
+    int pass_time(int input_time = 0);
 
-int time_clock();
-
+    int time_clock();
+}
 
 #endif //ROUTERSERVER_BASEFUNCTION_H

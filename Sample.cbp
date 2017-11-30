@@ -118,6 +118,12 @@
 		<Unit filename="/home/rilihong/github/RouterServer/src/RouterRunSample.cpp">
 			<Option target="Sample"/>
 		</Unit>
+		<Unit filename="/home/rilihong/github/RouterServer/src/TimeTaskQueue.cpp">
+			<Option target="Sample"/>
+		</Unit>
+		<Unit filename="/home/rilihong/github/RouterServer/src/TimeTaskQueue.h">
+			<Option target="Sample"/>
+		</Unit>
 		<Unit filename="/home/rilihong/github/RouterServer/src/TimerTask.cpp">
 			<Option target="Sample"/>
 		</Unit>

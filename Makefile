@@ -69,8 +69,8 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/local/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/local/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -258,6 +258,33 @@ src/RouterRunSample.cpp.s:
 	$(MAKE) -f CMakeFiles/Sample.dir/build.make CMakeFiles/Sample.dir/src/RouterRunSample.cpp.s
 .PHONY : src/RouterRunSample.cpp.s
 
+src/TimeTaskQueue.o: src/TimeTaskQueue.cpp.o
+
+.PHONY : src/TimeTaskQueue.o
+
+# target to build an object file
+src/TimeTaskQueue.cpp.o:
+	$(MAKE) -f CMakeFiles/Sample.dir/build.make CMakeFiles/Sample.dir/src/TimeTaskQueue.cpp.o
+.PHONY : src/TimeTaskQueue.cpp.o
+
+src/TimeTaskQueue.i: src/TimeTaskQueue.cpp.i
+
+.PHONY : src/TimeTaskQueue.i
+
+# target to preprocess a source file
+src/TimeTaskQueue.cpp.i:
+	$(MAKE) -f CMakeFiles/Sample.dir/build.make CMakeFiles/Sample.dir/src/TimeTaskQueue.cpp.i
+.PHONY : src/TimeTaskQueue.cpp.i
+
+src/TimeTaskQueue.s: src/TimeTaskQueue.cpp.s
+
+.PHONY : src/TimeTaskQueue.s
+
+# target to generate assembly for a file
+src/TimeTaskQueue.cpp.s:
+	$(MAKE) -f CMakeFiles/Sample.dir/build.make CMakeFiles/Sample.dir/src/TimeTaskQueue.cpp.s
+.PHONY : src/TimeTaskQueue.cpp.s
+
 src/TimerTask.o: src/TimerTask.cpp.o
 
 .PHONY : src/TimerTask.o
@@ -309,6 +336,9 @@ help:
 	@echo "... src/RouterRunSample.o"
 	@echo "... src/RouterRunSample.i"
 	@echo "... src/RouterRunSample.s"
+	@echo "... src/TimeTaskQueue.o"
+	@echo "... src/TimeTaskQueue.i"
+	@echo "... src/TimeTaskQueue.s"
 	@echo "... src/TimerTask.o"
 	@echo "... src/TimerTask.i"
 	@echo "... src/TimerTask.s"

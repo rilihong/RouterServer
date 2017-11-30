@@ -3,53 +3,37 @@
 //
 
 #include "BaseRouter.h"
+namespace noble{
 
-void BaseRouter::add_task_queue(MsgTask cb)
-{
-    BaseMutex bm(&task_mutex);
-    task_queues.push_back(cb);
-}
-
-void BaseRouter::add_time_queue(TimerTask cb)
-{
-    BaseMutex bm(&timer_mutex);
-    timer_tasks.push_back(cb);
-}
-
-BaseRouter::BaseRouter()
-{
-    std::thread main_proc(&BaseRouter::MainProc,this);
-}
-
-void BaseRouter::MainProc()
-{
-    while(1)
+    void BaseRouter::add_task_queue(MsgTask cb)
     {
-        {
-            BaseMutex bm(&task_mutex);
-            for(auto itr = task_queues.begin()
-                    ; itr != task_queues.end();)
-            {
-                (*itr)();
-                itr = task_queues.erase(itr);
-            }
-        }
+        BaseMutex bm(&task_mutex);
+        task_queues.push_back(cb);
+    }
 
+    BaseRouter::BaseRouter()
+    {
+        std::thread main_proc(&BaseRouter::MainProc,this);
+    }
+
+    void BaseRouter::MainProc()
+    {
+        while(1)
         {
-            BaseMutex bm(&timer_mutex);
-            for(auto itr = timer_tasks.begin()
-                    ;itr != timer_tasks.end();)
             {
-                if(itr->is_timeout())
+                BaseMutex bm(&task_mutex);
+                for(auto itr = task_queues.begin()
+                        ; itr != task_queues.end();)
                 {
-                    add_task_queue(itr->cb);
-                    itr = timer_tasks.erase(itr);
-                }
-                else
-                {
-                    ++itr;
+                    (*itr)(NULL);
+                    itr = task_queues.erase(itr);
                 }
             }
         }
+    }
+
+    void BaseRouter::Init()
+    {
+        timer_task_queue = new TimerTaskQueue(this);
     }
 }

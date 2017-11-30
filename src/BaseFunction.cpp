@@ -4,13 +4,15 @@
 
 #include "BaseFunction.h"
 #include <time.h>
-
-int pass_time(int imput_time)
+namespace noble
 {
-    return time(NULL) - imput_time;
-}
+    int pass_time(int input_time)
+    {
+        return time(NULL) - input_time;
+    }
 
-int time_clock()
-{
-    return pass_time();
+    int time_clock()
+    {
+        return pass_time();
+    }
 }
