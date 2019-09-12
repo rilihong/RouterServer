@@ -8,129 +8,121 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/rilihong/github/RouterServer"/>
+				<Option working_dir="/Users/rilihong/github/rilihong/RouterServer"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/rilihong/github/RouterServer/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/rilihong/github/RouterServer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/rilihong/github/RouterServer/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/rilihong/github/RouterServer/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/rilihong/github/rilihong/RouterServer/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/rilihong/github/rilihong/RouterServer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/rilihong/github/rilihong/RouterServer/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/rilihong/github/rilihong/RouterServer/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/rilihong/github/RouterServer"/>
+				<Option working_dir="/Users/rilihong/github/rilihong/RouterServer"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/rilihong/github/RouterServer/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/rilihong/github/RouterServer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/rilihong/github/RouterServer/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/rilihong/github/RouterServer/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/rilihong/github/rilihong/RouterServer/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/rilihong/github/rilihong/RouterServer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/rilihong/github/rilihong/RouterServer/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/rilihong/github/rilihong/RouterServer/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/rilihong/github/RouterServer"/>
+				<Option working_dir="/Users/rilihong/github/rilihong/RouterServer"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/rilihong/github/RouterServer/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/rilihong/github/RouterServer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/rilihong/github/RouterServer/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/rilihong/github/RouterServer/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/rilihong/github/rilihong/RouterServer/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/rilihong/github/rilihong/RouterServer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/rilihong/github/rilihong/RouterServer/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/rilihong/github/rilihong/RouterServer/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Sample">
-				<Option output="/home/rilihong/github/RouterServer/Sample" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/rilihong/github/RouterServer"/>
+				<Option output="/Users/rilihong/github/rilihong/RouterServer/Sample" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/rilihong/github/rilihong/RouterServer"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/local/boost/include"/>
-					<Add directory="/usr/include/c++/5"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
-					<Add directory="/usr/include/c++/5/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="."/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/rilihong/github/RouterServer/Makefile&quot;  VERBOSE=1 Sample"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/rilihong/github/RouterServer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/rilihong/github/RouterServer/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/rilihong/github/RouterServer/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/rilihong/github/rilihong/RouterServer/Makefile&quot;  VERBOSE=1 Sample"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/rilihong/github/rilihong/RouterServer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/rilihong/github/rilihong/RouterServer/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/rilihong/github/rilihong/RouterServer/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Sample/fast">
-				<Option output="/home/rilihong/github/RouterServer/Sample" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/rilihong/github/RouterServer"/>
+				<Option output="/Users/rilihong/github/rilihong/RouterServer/Sample" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/rilihong/github/rilihong/RouterServer"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/local/boost/include"/>
-					<Add directory="/usr/include/c++/5"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
-					<Add directory="/usr/include/c++/5/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="."/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/rilihong/github/RouterServer/Makefile&quot;  VERBOSE=1 Sample/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/rilihong/github/RouterServer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/rilihong/github/RouterServer/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/rilihong/github/RouterServer/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/rilihong/github/rilihong/RouterServer/Makefile&quot;  VERBOSE=1 Sample/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/rilihong/github/rilihong/RouterServer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/rilihong/github/rilihong/RouterServer/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/rilihong/github/rilihong/RouterServer/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/rilihong/github/RouterServer/src/BaseFunction.cpp">
+		<Unit filename="/Users/rilihong/github/rilihong/RouterServer/src/BaseFunction.cpp">
 			<Option target="Sample"/>
 		</Unit>
-		<Unit filename="/home/rilihong/github/RouterServer/src/BaseFunction.h">
+		<Unit filename="/Users/rilihong/github/rilihong/RouterServer/src/BaseFunction.h">
 			<Option target="Sample"/>
 		</Unit>
-		<Unit filename="/home/rilihong/github/RouterServer/src/BaseMessage.cpp">
+		<Unit filename="/Users/rilihong/github/rilihong/RouterServer/src/BaseMessage.cpp">
 			<Option target="Sample"/>
 		</Unit>
-		<Unit filename="/home/rilihong/github/RouterServer/src/BaseMessage.h">
+		<Unit filename="/Users/rilihong/github/rilihong/RouterServer/src/BaseMessage.h">
 			<Option target="Sample"/>
 		</Unit>
-		<Unit filename="/home/rilihong/github/RouterServer/src/BaseMutex.cpp">
+		<Unit filename="/Users/rilihong/github/rilihong/RouterServer/src/BaseMutex.cpp">
 			<Option target="Sample"/>
 		</Unit>
-		<Unit filename="/home/rilihong/github/RouterServer/src/BaseMutex.h">
+		<Unit filename="/Users/rilihong/github/rilihong/RouterServer/src/BaseMutex.h">
 			<Option target="Sample"/>
 		</Unit>
-		<Unit filename="/home/rilihong/github/RouterServer/src/BaseRouter.cpp">
+		<Unit filename="/Users/rilihong/github/rilihong/RouterServer/src/BaseRouter.cpp">
 			<Option target="Sample"/>
 		</Unit>
-		<Unit filename="/home/rilihong/github/RouterServer/src/BaseRouter.h">
+		<Unit filename="/Users/rilihong/github/rilihong/RouterServer/src/BaseRouter.h">
 			<Option target="Sample"/>
 		</Unit>
-		<Unit filename="/home/rilihong/github/RouterServer/src/BaseType.h">
+		<Unit filename="/Users/rilihong/github/rilihong/RouterServer/src/BaseType.h">
 			<Option target="Sample"/>
 		</Unit>
-		<Unit filename="/home/rilihong/github/RouterServer/src/RouterRunSample.cpp">
+		<Unit filename="/Users/rilihong/github/rilihong/RouterServer/src/RouterRunSample.cpp">
 			<Option target="Sample"/>
 		</Unit>
-		<Unit filename="/home/rilihong/github/RouterServer/src/TimeTaskQueue.cpp">
+		<Unit filename="/Users/rilihong/github/rilihong/RouterServer/src/TimeTaskQueue.cpp">
 			<Option target="Sample"/>
 		</Unit>
-		<Unit filename="/home/rilihong/github/RouterServer/src/TimeTaskQueue.h">
+		<Unit filename="/Users/rilihong/github/rilihong/RouterServer/src/TimeTaskQueue.h">
 			<Option target="Sample"/>
 		</Unit>
-		<Unit filename="/home/rilihong/github/RouterServer/src/TimerTask.cpp">
+		<Unit filename="/Users/rilihong/github/rilihong/RouterServer/src/TimerTask.cpp">
 			<Option target="Sample"/>
 		</Unit>
-		<Unit filename="/home/rilihong/github/RouterServer/src/TimerTask.h">
+		<Unit filename="/Users/rilihong/github/rilihong/RouterServer/src/TimerTask.h">
 			<Option target="Sample"/>
 		</Unit>
-		<Unit filename="/home/rilihong/github/RouterServer/CMakeLists.txt">
+		<Unit filename="/Users/rilihong/github/rilihong/RouterServer/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

@@ -18,7 +18,7 @@ namespace noble
         int delay_time;
         int active_time;
         int time_escape();
-        int is_timeout();
+        bool is_timeout();
     };
 }
 
